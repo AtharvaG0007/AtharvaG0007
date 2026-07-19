@@ -12,7 +12,7 @@
 <a href="https://atharva-portfolio-07.vercel.app/">
 <img src="https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000"/>
 </a>
-<a href="https://github.com/Atharv-0700">
+<a href="https://github.com/AtharvaG0007">
 <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=181717"/>
 </a>
 <a href="https://www.linkedin.com/in/atharva-gogawale-259173354/">
