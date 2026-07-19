@@ -26,7 +26,7 @@
 </a>
 </p>
 
-<img src="https://komarev.com/ghpvc/?username=Atharv-0700&style=for-the-badge&color=4F46E5&label=PROFILE+VIEWS"/>
+<img src="https://komarev.com/ghpvc/?username=AtharvaG0007&style=for-the-badge&color=4F46E5&label=PROFILE+VIEWS"/>
 
 </div>
 
@@ -40,7 +40,7 @@
 const atharva = {
   name: "Atharva Gogawale",
   role: "AI Developer & Full Stack Engineer",
-  education: "B.Sc Biotechnology",
+  education: "BCA (Bachelor of Computer Applications)",
   location: "Maharashtra, India 🇮🇳",
 
   languages: ["Python", "Java", "C", "JavaScript", "TypeScript"],
@@ -154,16 +154,16 @@ QR-based attendance system with geofencing and device verification.
 ## 📊 GitHub Analytics
 
 <p align="center">
-<img height="165em" src="https://github-readme-stats.vercel.app/api?username=Atharv-0700&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&icon_color=06B6D4&text_color=C9D1D9"/>
-<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atharv-0700&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&text_color=C9D1D9"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=AtharvaG0007&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&icon_color=06B6D4&text_color=C9D1D9"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AtharvaG0007&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&text_color=C9D1D9"/>
 </p>
 
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Atharv-0700&theme=tokyonight&hide_border=true&background=0D1117&ring=4F46E5&fire=06B6D4&currStreakLabel=4F46E5"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=AtharvaG0007&theme=tokyonight&hide_border=true&background=0D1117&ring=4F46E5&fire=06B6D4&currStreakLabel=4F46E5"/>
 </p>
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Atharv-0700&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=4F46E5&line=06B6D4&point=ffffff"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=AtharvaG0007&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=4F46E5&line=06B6D4&point=ffffff"/>
 </p>
 
 <br/>
