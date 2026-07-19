@@ -1,285 +1,249 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:4F46E5,100:06B6D4&height=250&section=header&text=Atharva%20Gogawale&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%7C%20Data%20Analytics%20%7C%20Full%20Stack%20Developer&descAlignY=58"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:4F46E5,100:06B6D4&height=280&section=header&text=Atharva%20Gogawale&fontSize=52&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%20Developer%20%7C%20Data%20Analytics%20%7C%20Full%20Stack%20Engineer&descAlignY=52&descSize=18"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=28&duration=3500&pause=1000&color=3B82F6&center=true&vCenter=true&width=800&lines=AI+Developer;Data+Analytics+Enthusiast;Full+Stack+Developer;Google+Cloud+Learner;Open+Source+Contributor;Always+Learning+New+Technologies"/>
+<br/>
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=600&size=26&duration=3000&pause=1000&color=4F46E5&center=true&vCenter=true&width=750&lines=Building+AI-Powered+Products+%F0%9F%9A%80;Full+Stack+Developer+%F0%9F%92%BB;Turning+Ideas+Into+Impact+%E2%9C%A8;Always+Learning%2C+Always+Building"/>
+
+<br/><br/>
 
 <p align="center">
+<a href="https://atharva-portfolio-07.vercel.app/">
+<img src="https://img.shields.io/badge/Portfolio-100000?style=for-the-badge&logo=vercel&logoColor=white&labelColor=000000"/>
+</a>
 <a href="https://github.com/Atharv-0700">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=181717"/>
 </a>
-
 <a href="https://www.linkedin.com/in/atharva-gogawale-259173354/">
-<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin"/>
+<img src="https://img.shields.io/badge/LinkedIn-100000?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0077B5"/>
 </a>
-
 <a href="mailto:gogawaleatharva997@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail"/>
+<img src="https://img.shields.io/badge/Gmail-100000?style=for-the-badge&logo=gmail&logoColor=white&labelColor=D14836"/>
 </a>
-
 <a href="https://instagram.com/_athtgo7002">
-<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+<img src="https://img.shields.io/badge/Instagram-100000?style=for-the-badge&logo=instagram&logoColor=white&labelColor=E4405F"/>
 </a>
-
-<img src="https://komarev.com/ghpvc/?username=Atharv-0700&style=for-the-badge&color=blue"/>
-
 </p>
+
+<img src="https://komarev.com/ghpvc/?username=Atharv-0700&style=for-the-badge&color=4F46E5&label=PROFILE+VIEWS"/>
 
 </div>
 
----
+<br/>
 
-# 👨‍💻 About Me
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
+
+## 👨‍💻 About Me
 
 ```javascript
 const atharva = {
+  name: "Atharva Gogawale",
+  role: "AI Developer & Full Stack Engineer",
+  education: "B.Sc Biotechnology",
+  location: "Maharashtra, India 🇮🇳",
 
-name: "Atharva Gogawale",
+  languages: ["Python", "Java", "C", "JavaScript", "TypeScript"],
 
-education: "B.Sc Biotechnology",
+  frontend: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS"],
 
-location: "Maharashtra, India",
+  backend: ["Node.js", "Firebase", "MongoDB", "MySQL"],
 
-code: [
-"Python",
-"Java",
-"C",
-"JavaScript",
-"TypeScript"
-],
+  cloud: ["Google Cloud", "AWS", "Docker", "Vercel", "Netlify"],
 
-frontend: [
-"React",
-"Next.js",
-"HTML",
-"CSS",
-"Tailwind CSS"
-],
+  tools: ["Git", "GitHub", "Figma", "Power BI"],
 
-backend: [
-"Node.js",
-"Firebase",
-"MongoDB",
-"MySQL"
-],
+  currentlyLearning: [
+    "Artificial Intelligence",
+    "Data Science",
+    "Generative AI",
+    "Cloud Computing",
+    "Data Analytics",
+    "Full Stack Development",
+  ],
 
-cloud: [
-"Google Cloud",
-"AWS",
-"Docker",
-"Vercel",
-"Netlify"
-],
+  certifications: ["IBM", "Coursera", "Google Cloud"],
 
-tools: [
-"Git",
-"GitHub",
-"Figma",
-"Power BI"
-],
+  featuredProjects: ["🦸 Civic Hero", "🤖 GOGO AI", "📍 Smart Attendance System"],
 
-currentlyLearning: [
-"Artificial Intelligence",
-"Machine Learning",
-"Generative AI",
-"Cloud Computing",
-"Data Analytics"
-],
-
-certifications: [
-"IBM",
-"Coursera",
-"Google Cloud"
-],
-
-projects: [
-"🦸 Civic Hero",
-"🤖 GOGO AI",
-"📍 Smart Attendance System"
-],
-
-goal: "Building impactful AI products for society 🚀"
-
-}
+  currentGoal: () => "Building impactful AI products for society 🚀",
+};
 ```
 
----
+<br/>
 
-# 💻 Tech Stack
+## 💻 Tech Stack
 
-### Programming Languages
+<table width="100%">
+<tr>
+<td valign="top" width="50%">
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+**Languages**
 
-### Frontend
+<img src="https://skillicons.dev/icons?i=python,java,c,js,ts" />
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![NextJS](https://img.shields.io/badge/NextJS-black?style=for-the-badge&logo=nextdotjs)
-![HTML5](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5)
-![CSS3](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss)
+**Frontend**
 
-### Backend & Database
+<img src="https://skillicons.dev/icons?i=react,nextjs,html,css,tailwind" />
 
-![NodeJS](https://img.shields.io/badge/NodeJS-339933?style=for-the-badge&logo=node.js)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
+</td>
+<td valign="top" width="50%">
 
-### Cloud & DevOps
+**Backend & Database**
 
-![Google Cloud](https://img.shields.io/badge/GoogleCloud-4285F4?style=for-the-badge&logo=googlecloud)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazonaws)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
-![Vercel](https://img.shields.io/badge/Vercel-black?style=for-the-badge&logo=vercel)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify)
+<img src="https://skillicons.dev/icons?i=nodejs,firebase,mongodb,mysql" />
 
-### Tools
+**Cloud & DevOps**
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge&logo=powerbi)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma)
+<img src="https://skillicons.dev/icons?i=gcp,aws,docker,vercel,netlify" />
 
----
+</td>
+</tr>
+</table>
 
-# 🚀 Featured Projects
+**Tools**
 
-## 🦸 Civic Hero
+<img src="https://skillicons.dev/icons?i=git,github,figma" /> &nbsp;
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
+
+## 🚀 Featured Projects
+
+<table width="100%">
+<tr>
+<td width="33%" valign="top">
+
+### 🦸 Civic Hero
 
 AI-powered emergency response platform connecting volunteers with nearby people during emergencies.
 
-**Tech Stack**
+`React` `TypeScript` `Firebase`
+`Gemini AI` `Google Maps`
 
-`React` `TypeScript` `Firebase` `Gemini AI` `Google Maps`
+</td>
+<td width="33%" valign="top">
 
----
+### 🤖 GOGO AI
 
-## 🤖 GOGO AI
+An intelligent multilingual AI assistant powered by Google Gemini.
 
-An intelligent multilingual AI Assistant powered by Google Gemini.
+`React` `Gemini AI`
+`Firebase` `Tailwind CSS`
 
-**Tech Stack**
+</td>
+<td width="33%" valign="top">
 
-`React`
+### 📍 Smart Attendance
 
-`Gemini AI`
+QR-based attendance system with geofencing and device verification.
 
-`Firebase`
+`React` `Firebase`
+`Google Maps` `QR Code`
 
-`Tailwind CSS`
+</td>
+</tr>
+</table>
 
----
+<br/>
 
-## 📍 Smart Attendance System
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
 
-QR Based Smart Attendance Management System with Geofencing and Device Verification.
-
-**Tech Stack**
-
-`React`
-
-`Firebase`
-
-`Google Maps`
-
-`QR Code`
-
-`Tailwind CSS`
-
----
-
-# 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <p align="center">
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Atharv-0700&show_icons=true&theme=tokyonight"/>
-
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atharv-0700&layout=compact&theme=tokyonight"/>
-
+<img height="165em" src="https://github-readme-stats.vercel.app/api?username=Atharv-0700&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&icon_color=06B6D4&text_color=C9D1D9"/>
+<img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Atharv-0700&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=4F46E5&text_color=C9D1D9"/>
 </p>
 
 <p align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Atharv-0700&theme=tokyonight"/>
-
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Atharv-0700&theme=tokyonight&hide_border=true&background=0D1117&ring=4F46E5&fire=06B6D4&currStreakLabel=4F46E5"/>
 </p>
-
----
-
-# 🏆 GitHub Trophies
 
 <p align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Atharv-0700&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10"/>
-
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Atharv-0700&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=4F46E5&line=06B6D4&point=ffffff"/>
 </p>
 
----
+<br/>
 
-# 📈 Contribution Graph
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
 
-<p align="center">
+## 📜 Certifications
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Atharv-0700&theme=tokyo-night"/>
+<table width="100%">
+<tr>
+<td width="33%">🏅 IBM Data Science Professional Certificate</td>
+<td width="33%">🏅 Coursera Data Science</td>
+<td width="33%">🏅 Google Cloud Skills Boost</td>
+</tr>
+<tr>
+<td width="33%">🏅 Digital Marketing</td>
+<td width="33%">🏅 Data Analytics</td>
+<td width="33%">🏅 Microsoft Excel</td>
+</tr>
+</table>
 
-</p>
+<br/>
 
----
+## 🌱 Currently Learning
 
-# 🐍 Contribution Snake
+<img src="https://img.shields.io/badge/Artificial_Intelligence-4F46E5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Data_Science-4F46E5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Google_Cloud-06B6D4?style=for-the-badge"/>
+<br/>
+<img src="https://img.shields.io/badge/Full_Stack_Development-4F46E5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Docker-06B6D4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/AWS-06B6D4?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Data_Analytics-4F46E5?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Power_BI-4F46E5?style=for-the-badge"/>
 
-<p align="center">
+<br/>
 
-<img src="https://raw.githubusercontent.com/Atharv-0700/Atharv-0700/output/github-contribution-grid-snake.svg"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
 
-</p>
+## ⚡ Quick Stats
 
----
+<table width="100%">
+<tr>
+<td align="center" width="25%">
 
-# 📜 Certifications
+### 🚀
+**3+**
+Featured Projects
 
-- 🏅 IBM Data Science Professional Certificate
-- 🏅 Coursera Data Science
-- 🏅 Google Cloud Skills Boost
-- 🏅 Digital Marketing
-- 🏅 Data Analytics
-- 🏅 Microsoft Excel
+</td>
+<td align="center" width="25%">
 
----
+### 🧠
+**6**
+Skills In Progress
 
-# 🌱 Currently Learning
+</td>
+<td align="center" width="25%">
 
-- Artificial Intelligence
-- Machine Learning
-- Google Cloud
-- Docker
-- AWS
-- Data Analytics
-- Power BI
+### ☁️
+**5+**
+Cloud & DevOps Tools
 
----
+</td>
+<td align="center" width="25%">
 
-# 💬 Random Dev Quote
+### 🏅
+**6**
+Certifications
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight)
+</td>
+</tr>
+</table>
 
----
-
-# 😂 Random Dev Meme
-
-<img src="https://readme-jokes.vercel.app/api?theme=tokyonight"/>
-
----
+<br/>
 
 <div align="center">
 
-### ⭐️ If you like my work, don't forget to Star my repositories!
+### ⭐ If you like my work, consider starring my repositories!
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:4F46E5&height=120&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:4F46E5,100:0F172A&height=180&section=footer"/>
 
 </div>
