@@ -170,28 +170,6 @@ QR-based attendance system with geofencing and device verification.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
 
-## 👾 Contribution Game
-
-<p align="center">
-  <picture>
-    <source
-      media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/AtharvaG0007/AtharvaG0007/output/pacman-contribution-graph-dark.svg">
-    <source
-      media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/AtharvaG0007/AtharvaG0007/output/pacman-contribution-graph.svg">
-    <img
-      alt="Pac-Man contribution graph"
-      src="https://raw.githubusercontent.com/AtharvaG0007/AtharvaG0007/output/pacman-contribution-graph-dark.svg">
-  </picture>
-  <br/><br/>
-  <sub>👾 Watch Pac-Man eat my GitHub contributions!</sub>
-</p>
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F46E5,100:06B6D4&height=3&section=header"/>
-
 ## 📜 Certifications
 
 <table width="100%">
