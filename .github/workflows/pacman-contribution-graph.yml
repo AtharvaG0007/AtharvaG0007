@@ -1,0 +1,64 @@
+name: Generate Pac-Man Contribution Graph
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate-pacman-graph:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate Pac-Man graph
+        env:
+          GITHUB_USERNAME: AtharvaG0007
+        run: python scripts/generate_pacman_graph.py
+
+      - name: Commit changes to main branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git add assets/pacman-contribution-graph*.svg
+            git commit -m "chore: update Pac-Man contribution graph"
+            git push
+          fi
+
+      - name: Push to output branch
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git fetch origin output 2>/dev/null || true
+          if git rev-parse --verify origin/output >/dev/null 2>&1; then
+            git checkout output
+            git pull origin output
+          else
+            git checkout --orphan output
+          fi
+          git checkout main -- assets/pacman-contribution-graph*.svg
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: publish Pac-Man contribution graph"
+            git push origin output
+          else
+            echo "No changes to publish"
+          fi
+        continue-on-error: true
