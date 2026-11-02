@@ -50,21 +50,46 @@ def get_contributions_data():
     headers = {
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Content-Type": "application/json",
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "pacman-contribution-graph",
     }
 
-    try:
-        response = requests.post(
-            GITHUB_API,
-            json={"query": query, "variables": variables},
-            headers=headers,
-            timeout=10,
+    # Retry transient API/network failures; fail clearly on auth or GraphQL errors.
+    last_error = None
+    for attempt in range(3):
+        try:
+            response = requests.post(
+                GITHUB_API,
+                json={"query": query, "variables": variables},
+                headers=headers,
+                timeout=30,
+            )
+            if response.status_code in (429, 500, 502, 503, 504):
+                last_error = f"GitHub API returned HTTP {response.status_code}: {response.text[:500]}"
+                if attempt < 2:
+                    import time
+                    time.sleep(2 ** attempt)
+                    continue
+            response.raise_for_status()
+            payload = response.json()
+            break
+        except requests.RequestException as exc:
+            last_error = str(exc)
+            if attempt < 2:
+                import time
+                time.sleep(2 ** attempt)
+                continue
+            raise RuntimeError(f"Failed to fetch GitHub contribution data after 3 attempts: {last_error}") from exc
+        except ValueError as exc:
+            raise RuntimeError("GitHub API returned invalid JSON.") from exc
+    else:
+        raise RuntimeError(f"GitHub API request failed after 3 attempts: {last_error}")
+
+    if response.status_code == 403:
+        raise RuntimeError(
+            "GitHub API returned 403. Check that GITHUB_TOKEN is available and the token has not exceeded its API rate limit. "
+            f"Response: {response.text[:500]}"
         )
-        response.raise_for_status()
-        payload = response.json()
-    except requests.RequestException as exc:
-        raise RuntimeError(f"Failed to fetch GitHub contribution data: {exc}") from exc
-    except ValueError as exc:
-        raise RuntimeError("GitHub API returned invalid JSON.") from exc
 
     if "errors" in payload:
         raise RuntimeError(f"GitHub GraphQL error: {payload['errors']}")
@@ -89,10 +114,14 @@ def contributions_to_grid(weeks):
     grid = [[0] * len(weeks) for _ in range(7)]
 
     for week_idx, week in enumerate(weeks):
+        if not isinstance(week, dict):
+            raise ValueError(f"Invalid contribution week at index {week_idx}: expected an object.")
         contribution_days = week.get("contributionDays", [])
-        for day_idx, day in enumerate(contribution_days):
-            if day_idx >= 7:
-                break
+        if not isinstance(contribution_days, list):
+            raise ValueError(f"Invalid contributionDays at week {week_idx}: expected a list.")
+        for day_idx, day in enumerate(contribution_days[:7]):
+            if not isinstance(day, dict):
+                raise ValueError(f"Invalid contribution day at week {week_idx}, day {day_idx}.")
             grid[day_idx][week_idx] = int(day.get("contributionCount", 0))
 
     return grid

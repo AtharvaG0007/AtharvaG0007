@@ -5,6 +5,13 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: pacman-contribution-graph
+  cancel-in-progress: false
+
 jobs:
   generate-pacman-graph:
     runs-on: ubuntu-latest
@@ -13,52 +20,53 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: python -m pip install --disable-pip-version-check requests
 
       - name: Generate Pac-Man graph
         env:
           GITHUB_USERNAME: AtharvaG0007
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/generate_pacman_graph.py
 
-      - name: Commit changes to main branch
+      - name: Commit generated graphs to main
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add assets/pacman-contribution-graph*.svg
+          if git diff --cached --quiet; then
+            echo "No graph changes to commit."
           else
-            git add assets/pacman-contribution-graph*.svg
             git commit -m "chore: update Pac-Man contribution graph"
-            git push
+            git push origin HEAD:main
           fi
 
-      - name: Push to output branch
+      - name: Publish graphs to output branch
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git fetch origin output 2>/dev/null || true
-          if git rev-parse --verify origin/output >/dev/null 2>&1; then
-            git checkout output
-            git pull origin output
+          git fetch origin output || true
+          if git show-ref --verify --quiet refs/remotes/origin/output; then
+            git checkout -B output origin/output
           else
             git checkout --orphan output
+            git rm -rf . || true
           fi
           git checkout main -- assets/pacman-contribution-graph*.svg
-          git add assets/
-          if ! git diff --cached --quiet; then
+          git add assets/pacman-contribution-graph*.svg
+          if git diff --cached --quiet; then
+            echo "Published graph files are already up to date."
+          else
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config user.name "github-actions[bot]"
             git commit -m "chore: publish Pac-Man contribution graph"
             git push origin output
-          else
-            echo "No changes to publish"
           fi
-        continue-on-error: true
